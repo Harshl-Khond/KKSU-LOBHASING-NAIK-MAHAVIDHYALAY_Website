@@ -1,0 +1,71 @@
+.student-life-page {
+  background-color: #f8f9fa;
+}
+
+/* Hero */
+.student-life-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 15px;
+}
+
+.student-life-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.student-life-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Sections */
+.sl-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.sl-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.sl-section img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sl-section h3 {
+  color: #992d2d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sl-section ul {
+  padding-left: 18px;
+}
+
+.sl-section li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sl-section,
+  .sl-section.reverse {
+    flex-direction: column;
+  }
+
+  .sl-section img {
+    width: 100%;
+  }
+
+  .student-life-hero h1 {
+    font-size: 1.8rem;
+  }
+}

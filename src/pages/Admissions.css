@@ -1,0 +1,106 @@
+:root {
+  --maroon: #992D2D;
+  --yellow: #FDEF66;
+  --teal: #00A9CE;
+  --white: #FFFFFF;
+}
+
+/* Hero Styling */
+.admission-hero {
+  background: linear-gradient(rgba(153, 45, 45, 0.9), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1500');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  border-bottom: 6px solid var(--yellow);
+}
+
+.bg-gold { background-color: var(--yellow) !important; }
+
+/* Card & Content */
+.admission-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.border-start-maroon { border-left: 6px solid var(--maroon); }
+
+.section-title {
+  color: var(--maroon);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  background: #fdfdfd;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+/* Process Timeline */
+.process-wrapper { position: relative; }
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+.step-number {
+  background: var(--maroon);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Prospectus Sidebar */
+.prospectus-box {
+  background: var(--maroon);
+  color: white;
+}
+.text-gold { color: var(--yellow) !important; }
+.btn-gold { 
+  background-color: var(--yellow); 
+  border: none; 
+  color: #333; 
+  transition: transform 0.2s;
+}
+.btn-gold:hover { transform: scale(1.05); background-color: #fce83a; }
+
+/* Document List */
+.doc-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f9f9f9;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+.doc-list li i { margin-right: 10px; font-size: 1.2rem; }
+
+/* Table Styling */
+.bg-light-maroon { background-color: #fff5f5; color: var(--maroon); }
+.text-teal { color: var(--teal) !important; }
+.bg-teal { background-color: var(--teal) !important; }
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .admission-hero { padding: 50px 0; }
+  .section-title { font-size: 1.3rem; }
+}
+
+@media (max-width: 576px) {
+  .info-box { margin-bottom: 10px; }
+  .step-number { width: 30px; height: 30px; font-size: 0.8rem; }
+  .admission-card { padding: 20px !important; }
+}

@@ -1,0 +1,188 @@
+:root {
+  --maroon: #992D2D;
+  --teal: #00A9CE;
+  --gold: #fdef66;
+  --text-dark: #2d3436;
+  --light-gray: #f8f9fa;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Global Page Smoothness */
+.about-page {
+  background-color: #fcfcfc;
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Enhanced Header with Parallax-like feel */
+.about-header {
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+              url('https://images.unsplash.com/photo-1523050338692-7b835a07973f?auto=format&fit=crop&q=80&w=1500');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  color: white;
+  padding: 80px 0 !important;
+  border-bottom: 5px solid var(--gold);
+}
+
+/* Modern Content Cards */
+.content-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: var(--transition);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Dynamic Section Headings */
+.section-heading {
+  color: var(--maroon);
+  font-weight: 800;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: var(--teal);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.section-heading i {
+  color: var(--teal);
+  margin-right: 12px;
+}
+
+/* Typography Improvements */
+.college-detail-text p {
+  line-height: 1.9;
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+  color: #444;
+}
+
+/* Image Styling for Google/Live Images */
+.college-live-image img {
+  border-radius: 15px;
+  transition: var(--transition);
+  filter: grayscale(10%);
+  border: 4px solid white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.college-live-image img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+/* Vision & Mission Cards - Modern UI */
+.vision-card, .mission-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+  transition: var(--transition);
+}
+
+.vision-card:hover, .mission-card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card-header-custom {
+  padding: 18px 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card-header-custom.vision { background: linear-gradient(135deg, var(--maroon), #7a2323); }
+.card-header-custom.mission { background: linear-gradient(135deg, var(--teal), #0089a7); }
+
+.card-header-custom h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-body-custom {
+  padding: 25px;
+  background: #fff;
+}
+
+.card-body-custom p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  position: relative;
+  padding: 10px 0;
+}
+
+.card-body-custom li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  color: #444;
+}
+
+.card-body-custom li i {
+  color: var(--teal);
+  background: rgba(0, 169, 206, 0.1);
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 0.9rem;
+}
+
+/* Sidebar Info Box */
+.grey-card {
+  background: var(--light-gray);
+  border: 1px dashed var(--maroon);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.text-maroon { 
+  color: var(--maroon); 
+  letter-spacing: 0.5px;
+}
+
+/* Sticky behavior for sidebars */
+@media (min-width: 992px) {
+  .sticky-top {
+    top: 100px !important;
+    z-index: 10;
+  }
+}
+
+/* Robust Mobile Responsiveness */
+@media (max-width: 991px) {
+  .about-header { padding: 50px 0 !important; }
+  .about-header h1 { font-size: 2.2rem; }
+  .content-card { padding: 25px; margin-bottom: 20px; }
+  .sticky-top { position: static !important; }
+}
+
+@media (max-width: 576px) {
+  .section-heading { font-size: 1.3rem; }
+  .section-heading::after { width: 100%; }
+  .college-detail-text p { font-size: 1rem; text-align: left; }
+  .card-header-custom h3 { font-size: 1.1rem; }
+}
