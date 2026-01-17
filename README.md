@@ -1,16 +1,118 @@
-# React + Vite
+College Website (UGC Compliant)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the official **College Website** developed using **React (Vite)**.  
+The website is designed strictly according to the **UGC Guidelines on Public Self-Disclosure (2024)** and supports transparency, accessibility, and accountability for all stakeholders.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+The website provides complete and publicly accessible information related to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Institutional details
+- Administration & governance
+- Academics
+- Admissions
+- Student life & welfare
+- IQAC & quality assurance
+- RTI & statutory disclosures
+- Contact information
 
-## Expanding the ESLint configuration
+⚠️ No login or registration is required to access any information, as per UGC norms.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js (Vite)
+- **Styling:** CSS + Bootstrap 5
+- **Routing:** React Router DOM
+- **Hosting:** Vercel (HTTPS enabled)
+
+---
+
+## 📂 Folder Structure
+
+src/
+├── assets/ # Images (logos, banners)
+├── components/ # Header, Navbar, Footer
+├── layout/ # MainLayout
+├── pages/ # Home, About, Academics, Admissions, StudentLife, etc.
+├── App.jsx
+└── main.jsx
+
+markdown
+Copy code
+
+---
+
+## 🌐 Website Pages (UGC Aligned)
+
+### 🏠 Home
+- Institutional identity
+- Quick links (UGC, IQAC, RTI, Admissions)
+- Notices & announcements
+- Achievements & highlights
+
+### 🏛️ About HEI
+- Overview of institution
+- Vision & mission
+- Recognition (UGC 2(f), 12(B))
+- NAAC / NIRF status
+- Governance & statutory documents
+- Annual reports & audit reports
+
+### 🏫 Administration
+- Head of Institution
+- Governing Body
+- Administrative officers
+- Statutory committees (ICC, Anti-Ragging, Grievance)
+- Ombudsperson
+- Policies & code of conduct
+
+### 📚 Academics
+- Programs offered
+- Departments
+- Faculty directory
+- Syllabus & outcomes
+- Academic calendar
+- Library information
+
+### 📝 Admissions
+- Admission overview
+- Eligibility criteria
+- Admission process
+- Prospectus (PDF)
+- Fee structure
+- Refund & reservation policies
+
+### 🎓 Student Life
+- Student support services
+- Grievance redressal
+- Anti-ragging cell
+- Internal Complaints Committee (ICC)
+- Facilities for Divyangjan
+- Sports, NCC, NSS
+- Hostel & placement support
+- Scholarships & financial aid
+
+### 📜 RTI
+- CPIO details
+- Appellate authority
+- RTI Act information
+
+### 📍 Contact Us
+- Complete postal address
+- Phone & official email
+- Office hours
+- Google Map location
+
+---
+
+## 📱 Key Features
+
+- ✅ Fully mobile responsive
+- ✅ Public access (no login)
+- ✅ UGC & NAAC compliant layout
+- ✅ Clean academic UI
+- ✅ Accessible navigation
