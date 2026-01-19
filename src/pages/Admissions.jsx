@@ -83,12 +83,12 @@ export default function Admissions() {
                       <td>₹3,500</td>
                       <td className="fw-bold">₹15,500</td>
                     </tr>
-                    <tr>
+                    {/* <tr>
                       <td>BCA</td>
                       <td>₹18,000</td>
                       <td>₹4,500</td>
                       <td className="fw-bold">₹22,500</td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>

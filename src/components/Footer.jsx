@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* College Identity & Mission */}
           <div className="col-12 col-md-4">
-            <h5 className="footer-title">MPSC College, LOHGAON</h5>
+            <h5 className="footer-title">MPSC College, KALAMBA</h5>
             <div className="title-underline"></div>
             <p className="footer-description">
               Empowering students through quality education and administrative excellence. 
@@ -53,7 +53,7 @@ export default function Footer() {
             <ul className="footer-contact">
               <li>
                 <i className="bi bi-geo-alt-fill"></i>
-                <span>GAT.LOHGAON TQ.KARANJA DIST.WASHIM</span>
+                <span>AT.KALAMBA(BO.) TQ MANGRULPIR DIST.WASHIM</span>
               </li>
               <li>
                 <i className="bi bi-envelope-fill"></i>
@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <p className="copyright">
-            © {new Date().getFullYear()} <strong>SUBHASHRAO NAIK MAHAVIDHYALAY LOHGAON</strong>.
+            © {new Date().getFullYear()} <strong>LOBHASING NAIK MAHAVIDHYALAY KALAMBA</strong>.
           </p>
           <div className="ugc-compliance-tag">
             <span>Website Compliant with UGC Public Self-Disclosure Guidelines</span>

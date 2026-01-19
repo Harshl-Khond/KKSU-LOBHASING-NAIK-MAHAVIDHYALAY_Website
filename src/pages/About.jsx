@@ -27,7 +27,7 @@ export default function About() {
               <h2 className="section-heading"><i className="bi bi-info-circle-fill"></i> Our Legacy & Excellence</h2>
               <div className="college-detail-text">
                 <p className="lead">
-                  Subhashrao Naik Mahavidhyalay, Lohgaon, established with a profound vision to serve the rural community, 
+                  Lobhasing Naik Mahavidyalaya Kalamba, established with a profound vision to serve the rural community, 
                   has emerged as a premier center for higher education in the region.
                 </p>
                 <p>

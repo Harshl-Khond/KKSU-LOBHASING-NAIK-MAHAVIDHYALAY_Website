@@ -5,6 +5,7 @@ import collegeImg from "../assets/College.png"
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
+
 export default function Home() {
   return (
     <div className="home-wrapper">
@@ -70,7 +71,7 @@ export default function Home() {
                 <span className="subtitle">ABOUT OUR INSTITUTION</span>
                 <h2 className="section-title">A Legacy of Knowledge & Discipline</h2>
                 <p className="mt-4 text-secondary">
-                  Subhashrao Naik Mahavidhyalay, Lohgaon, is more than just a college; it is a 
+                  LOBHASING NAIK MAHAVIDHYALAY KALAMBA, is more than just a college; it is a 
                   training ground for the next generation of administrators. We specialize in 
                   blending rigorous university curriculum with real-world competitive exam coaching.
                 </p>
@@ -99,7 +100,7 @@ export default function Home() {
             <div className="row g-0">
               <div className="col-md-4">
                 <div className="principal-img-container">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" className="principal-img" alt="Principal" />
+                    <img src="" className="principal-img" alt="Principal" />
                 </div>
               </div>
               <div className="col-md-8 p-4 p-lg-5 d-flex flex-column justify-content-center bg-white">
@@ -113,7 +114,7 @@ export default function Home() {
                 </p>
                 <div className="principal-meta">
                     <h5 className="fw-bold mb-0">Dr. Rajesh G. Deshmukh</h5>
-                    <span className="text-gold fw-bold text-uppercase small">Principal, SNM Mahavidhyalay</span>
+                    <span className="text-gold fw-bold text-uppercase small">Principal, LN Mahavidhyalay</span>
                 </div>
               </div>
             </div>

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --maroon: #800000;
-  --gold-metallic: #D4AF37;
+  --primary-teal: #016B61;
+  --aqua-med: #70B2B2;
+  --sky-light: #9ECFD4;
+  --cream-accent: #E5E9C5;
   --white: #ffffff;
   --text-grey: #444;
 }
@@ -15,8 +17,8 @@
 
 /* Slim Top Bar */
 .top-bar {
-  background: var(--maroon);
-  color: white;
+  background: var(--primary-teal);
+  color: var(--cream-accent);
   padding: 4px 0;
   font-size: 11.5px;
   font-family: 'Inter', sans-serif;
@@ -25,20 +27,20 @@
 }
 
 .top-item i {
-  color: var(--gold-metallic);
+  color: var(--sky-light);
 }
 
 /* Main Branding Layout */
 .header-flex-wrapper {
   display: flex;
-  flex-direction: row; /* Force horizontal row even on mobile */
+  flex-direction: row; 
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
 }
 
 .logo-box {
-  flex: 0 0 80px; /* Reduced fixed width for logos to allow text space */
+  flex: 0 0 80px; 
   display: flex;
   justify-content: center;
 }
@@ -57,7 +59,7 @@
 
 .motto-text {
   font-size: 12px;
-  color: var(--maroon);
+  color: var(--aqua-med);
   font-weight: 700;
   margin-bottom: 2px;
   letter-spacing: 1px;
@@ -65,7 +67,7 @@
 
 .college-name-h1 {
   font-family: 'Cinzel', serif;
-  color: var(--maroon);
+  color: var(--primary-teal);
   font-weight: 700;
   font-size: 22px;
   margin: 0;
@@ -89,28 +91,28 @@
 }
 
 .divider {
-  color: var(--gold-metallic);
+  color: var(--aqua-med);
   margin: 0 8px;
 }
 
-/* Slim Accent Line */
+/* Slim Accent Line (Using your specific Teal and Cream combination) */
 .header-bottom-line {
   height: 3px;
-  background: linear-gradient(90deg, var(--maroon) 0%, var(--gold-metallic) 50%, var(--maroon) 100%);
+  background: linear-gradient(90deg, var(--primary-teal) 0%, var(--cream-accent) 50%, var(--primary-teal) 100%);
 }
 
 /* ===== MOBILE RESPONSIVE TWEAKS ===== */
 @media (max-width: 768px) {
   .logo-box {
-    flex: 0 0 50px; /* Smaller logos for mobile */
+    flex: 0 0 50px; 
   }
 
   .header-img {
-    max-height: 50px; /* Smaller logo height for mobile */
+    max-height: 50px; 
   }
 
   .college-name-h1 {
-    font-size: 14px; /* Scaled down for mobile row */
+    font-size: 14px; 
   }
 
   .motto-text {
@@ -123,7 +125,7 @@
 
   .aff-text {
     font-size: 8.5px;
-    display: block; /* Stack affiliation text on mobile for better fit */
+    display: block; 
     line-height: 1.2;
   }
 

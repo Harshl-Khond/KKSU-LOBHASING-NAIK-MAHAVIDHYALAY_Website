@@ -4,7 +4,7 @@ import "./Academics.css";
 export default function Academics() {
   const programmes = [
     { name: "BA Civil Services", duration: "3 Years", intake: 60, eligibility: "12th Pass (Any Stream)", year: "2022" },
-    { name: "Bachelor of Computer Application (BCA)", duration: "3 Years", intake: 60, eligibility: "12th Pass (Science/Commerce preferred)", year: "2023" },
+    // { name: "Bachelor of Computer Application (BCA)", duration: "3 Years", intake: 60, eligibility: "12th Pass (Science/Commerce preferred)", year: "2023" },
     // { name: "B.A. (Bachelor of Arts)", duration: "3 Years", intake: 120, eligibility: "12th Pass", year: "1985" },
     // { name: "B.Sc. (Bachelor of Science)", duration: "3 Years", intake: 120, eligibility: "12th Science", year: "2000" },
     // { name: "M.A. (Master of Arts)", duration: "2 Years", intake: 60, eligibility: "Graduation", year: "2010" },
@@ -108,7 +108,7 @@ export default function Academics() {
               <div className="col-6 col-md-4 col-lg-3" key={item}>
                 <div className="faculty-card text-center shadow-sm">
                   <div className="img-box">
-                    <img src={`https://i.pravatar.cc/150?img=${item+15}`} alt="Faculty" />
+                    <img src={`https://i.pravatar.cc/150?img=${item+55}`} alt="Faculty" />
                   </div>
                   <div className="p-3">
                     <h6 className="mb-1 text-maroon fw-bold">Prof. Faculty Name</h6>

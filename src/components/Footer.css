@@ -1,13 +1,13 @@
 :root {
-  --maroon: #992D2D;
-  --yellow: #FDEF66;
-  --teal: #00A9CE;
-  --dark-bg: #1a1a1a; /* Darker shade for contrast */
+  --primary-teal: #016B61;
+  --aqua-med: #70B2B2;
+  --sky-light: #9ECFD4;
+  --cream-accent: #E5E9C5;
   --white: #FFFFFF;
 }
 
 .ugc-footer {
-  background-color: var(--maroon);
+  background-color: var(--primary-teal);
   color: var(--white);
   padding: 60px 0 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -15,7 +15,7 @@
 
 /* Titles */
 .footer-title {
-  color: var(--yellow);
+  color: var(--cream-accent); /* Replaced yellow with cream */
   font-weight: 800;
   font-size: 1.4rem;
   margin-bottom: 10px;
@@ -24,12 +24,12 @@
 .title-underline {
   width: 50px;
   height: 3px;
-  background-color: var(--teal);
+  background-color: var(--aqua-med); /* Replaced teal with aqua */
   margin-bottom: 20px;
 }
 
 .footer-subtitle {
-  color: var(--yellow);
+  color: var(--cream-accent); /* Replaced yellow with cream */
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -63,7 +63,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--yellow);
+  color: var(--cream-accent);
   opacity: 1;
   padding-left: 8px;
 }
@@ -83,7 +83,7 @@
 }
 
 .footer-contact i {
-  color: var(--yellow);
+  color: var(--cream-accent);
   font-size: 1.1rem;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .social-links a:hover {
-  background-color: var(--teal);
+  background-color: var(--aqua-med);
   transform: translateY(-3px);
 }
 
@@ -134,14 +134,16 @@
 .copyright {
   font-size: 0.85rem;
   margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .ugc-compliance-tag {
-  background-color: var(--teal);
+  background-color: var(--aqua-med);
   padding: 5px 15px;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
+  color: var(--white);
 }
 
 /* --- MOBILE RESPONSIVENESS --- */

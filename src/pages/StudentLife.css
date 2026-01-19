@@ -1,71 +1,153 @@
+/* StudentLife.css */
+
+:root {
+  --sl-teal: #016B61;
+  --sl-aqua: #70B2B2;
+  --sl-sky: #9ECFD4;
+  --sl-cream: #E5E9C5;
+  --sl-white: #ffffff;
+  --sl-text: #333333;
+}
+
 .student-life-page {
-  background-color: #f8f9fa;
+  background-color: #f9fbfb;
+  color: var(--sl-text);
+  overflow-x: hidden;
 }
 
-/* Hero */
+/* ================= 1. PAGE HEADER ================= */
 .student-life-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
-  background-size: cover;
-  background-position: center;
-  padding: 80px 15px;
-}
-
-.student-life-hero h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.student-life-hero p {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* Sections */
-.sl-section {
-  display: flex;
-  gap: 30px;
-  align-items: center;
+  background: linear-gradient(135deg, var(--sl-teal) 0%, var(--sl-aqua) 100%);
+  padding: 80px 0;
+  position: relative;
+  clip-path: ellipse(150% 100% at 50% 0%); /* Subtle curve for a modern look */
   margin-bottom: 50px;
 }
 
+.student-life-hero h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+.student-life-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+/* ================= 2. SECTION LAYOUTS ================= */
+.sl-section {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Reverse layout for alternating sections */
 .sl-section.reverse {
   flex-direction: row-reverse;
 }
 
+/* Image Styling - No color filters applied */
 .sl-section img {
-  width: 40%;
-  border-radius: 10px;
+  width: 45%;
+  height: 350px;
   object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0px var(--sl-cream); /* Beautiful "Proper" Accent */
+}
+
+.sl-section.reverse img {
+  box-shadow: -20px 20px 0px var(--sl-sky); /* Alternating accent color */
+}
+
+/* Content Area */
+.sl-section div {
+  width: 55%;
 }
 
 .sl-section h3 {
-  color: #992d2d;
+  color: var(--sl-teal);
   font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
 }
 
+.sl-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: var(--sl-aqua);
+  border-radius: 10px;
+}
+
+/* List Styling */
 .sl-section ul {
-  padding-left: 18px;
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
 }
 
 .sl-section li {
-  margin-bottom: 6px;
-  font-size: 0.95rem;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .sl-section,
-  .sl-section.reverse {
+.sl-section li::before {
+  content: "✓";
+  color: var(--sl-teal);
+  font-weight: bold;
+  margin-right: 15px;
+  background: var(--sl-cream);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+/* ================= 3. MOBILE RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .sl-section, .sl-section.reverse {
     flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
 
-  .sl-section img {
+  .sl-section img, .sl-section div {
     width: 100%;
   }
 
-  .student-life-hero h1 {
-    font-size: 1.8rem;
+  .sl-section img {
+    height: 280px;
+    box-shadow: 10px 10px 0px var(--sl-cream);
   }
+
+  .sl-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sl-section li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .student-life-hero h1 { font-size: 2.2rem; }
+  .student-life-hero { padding: 50px 0; }
 }

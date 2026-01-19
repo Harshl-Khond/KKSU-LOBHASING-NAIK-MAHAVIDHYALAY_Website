@@ -20,8 +20,8 @@ export default function Contact() {
           <div className="col-lg-5">
             <div className="info-card p-4 shadow-sm mb-4 border-maroon-left">
               <h4 className="text-maroon fw-bold mb-3">Institutional Identity</h4>
-              <h5 className="mb-1 fw-bold text-uppercase">Subhashrao Naik Mahavidhyalay</h5>
-              <p className="text-teal mb-3 fw-semibold">Lohgaon Tq. Karanja, Dist. Washim</p>
+              <h5 className="mb-1 fw-bold text-uppercase">LOBHASING NAIK MAHAVIDHYALAY</h5>
+              <p className="text-teal mb-3 fw-semibold">Kalamba (Bo.), Tq. Mangrulpir, Dist. Washim</p>
               
               <ul className="list-unstyled identity-list">
                 <li><strong>AISHE Code:</strong> [Enter AISHE Code]</li>
@@ -33,7 +33,7 @@ export default function Contact() {
               <h4 className="text-maroon fw-bold mb-3">Office Details</h4>
               <div className="d-flex mb-3">
                 <i className="bi bi-geo-alt-fill text-teal fs-4 me-3"></i>
-                <p className="mb-0">At Post Lohgaon, Tq. Karanja (Lad),<br/>District Washim, Maharashtra</p>
+                <p className="mb-0">Kalamba (Bo.), Tq. Mangrulpir, Dist. Washim</p>
               </div>
               <div className="d-flex mb-3">
                 <i className="bi bi-telephone-fill text-teal fs-4 me-3"></i>
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="d-flex mb-3">
                 <i className="bi bi-envelope-at-fill text-teal fs-4 me-3"></i>
                 <div className="mb-0">
-                   <a href="mailto:sncollegelohagaon2022@gmail.com" className="text-decoration-none text-dark d-block">sncollegelohagaon2022@gmail.com</a>
+                   <a href="mailto:lncollegekalamba2022@gmail.com" className="text-decoration-none text-dark d-block">lncollegekalamba2022@gmail.com</a>
                    <a href="mailto:dagdusingnaik@gmail.com" className="text-decoration-none text-dark d-block">dagdusingnaik@gmail.com</a>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 style={{ border: 0 }} 
                 allowFullScreen="" 
                 loading="lazy"
-                title="Subhashrao Naik Mahavidhyalay Lohgaon Location"
+                title="LOBHASING NAIK MAHAVIDHYALAY KALAMBA"
               ></iframe>
             </div>
           </div>
