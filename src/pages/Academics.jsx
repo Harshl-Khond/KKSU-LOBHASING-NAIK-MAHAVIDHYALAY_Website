@@ -97,7 +97,7 @@ export default function Academics() {
           </div>
         </div>
 
-        {/* ===== 3. FACULTY INFORMATION ===== */}
+        {/* ===== 3. FACULTY INFORMATION =====
         <section>
           <div className="section-header">
             <h2 className="title-text">Academic Leadership</h2>
@@ -123,7 +123,7 @@ export default function Academics() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

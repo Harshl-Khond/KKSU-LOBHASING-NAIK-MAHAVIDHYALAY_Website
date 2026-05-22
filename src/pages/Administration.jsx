@@ -1,16 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Administration.css";
+import img1 from "../public/Priya ganoje .jpg";
+import img2 from "../public/mahesh_square.jpg";
+import img3 from "../public/purushottam chavhan_square.jpg";
+import img4 from "../public/Vijay Sitaram Rathod.jpg";
+import img5 from "../public/nitesh prakash rathod_square.jpg";
 
 export default function Administration() {
   const staffList = [
-    { name: "Dr. A. Sharma", subject: "English", designation: "Professor" },
-    { name: "Dr. B. Patil", subject: "History", designation: "Associate Professor" },
-    { name: "Ms. C. Deshmukh", subject: "Political Science", designation: "Assistant Professor" },
-    { name: "Dr. D. Kulkarni", subject: "Commerce", designation: "Professor" },
-    { name: "Mr. E. Joshi", subject: "Accounting", designation: "Assistant Professor" },
-    { name: "Ms. F. Mehta", subject: "Business Studies", designation: "Assistant Professor" },
-    { name: "Dr. G. Rao", subject: "Mathematics", designation: "Professor" },
-    { name: "Dr. H. Iyer", subject: "Physics", designation: "Associate Professor" },
+    { name: "Nitesh Prakash Rathod", education: " M.A., D.ed.", subject: "English", designation: "Professor", img: img5 },
+    { name: "Vijay Sitaram Rathod", education: "B.ed,  M.A. appear", subject: "History", designation: "Associate Professor", img: img4 },
+    { name: "mahesh", education: "B.A., BSW, MSW", subject: "Political Science", designation: "Assistant Professor", img: img2 },
+    { name: "Purushottam chavhan", education: "MA D.ed B.ed", subject: "Commerce", designation: "Professor", img: img3 },
+
   ];
 
   return (
@@ -26,7 +28,7 @@ export default function Administration() {
 
       <div className="container my-5">
         
-        {/* ================= GOVERNING BODY ================= */}
+        {/* ================= GOVERNING BODY =================
         <section className="admin-card-section mb-5">
           <div className="section-header mb-5">
             <h2 className="text-maroon">Governing & Management Body</h2>
@@ -52,7 +54,7 @@ export default function Administration() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ================= HIERARCHY FLOW ================= */}
         <section className="admin-card-section mb-5 py-4">
@@ -61,8 +63,8 @@ export default function Administration() {
           </div>
           
           <div className="hierarchy-container">
-            <div className="hierarchy-step">Governing Body</div>
-            <div className="hierarchy-line"></div>
+            {/* <div className="hierarchy-step">Governing Body</div>
+            <div className="hierarchy-line"></div> */}
             <div className="hierarchy-step active">Principal</div>
             <div className="hierarchy-line"></div>
             <div className="hierarchy-step">Heads of Departments</div>
@@ -80,17 +82,17 @@ export default function Administration() {
                     <div className="col-md-4 text-center p-4">
                       <div className="profile-gold-ring">
                         <img 
-                          src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" 
+                          src={img1} 
                           alt="Principal" 
                           className="principal-img" 
                         />
                       </div>
                     </div>
                     <div className="col-md-8 p-4 p-md-5">
-                      <h2 className="text-white mb-1">Dr. ABC</h2>
+                      <h2 className="text-white mb-1">Miss. Priya Ganoje</h2>
                       <h4 className="text-gold mb-4">Principal / Head of Institution</h4>
                       <div className="row text-white mb-4">
-                        <div className="col-6"><small className="d-block opacity-75">Qualification</small><strong>Ph.D. Education</strong></div>
+                        <div className="col-6"><small className="d-block opacity-75">Qualification</small><strong>MA, B.Ed</strong></div>
                         <div className="col-6"><small className="d-block opacity-75">Experience</small><strong>20+ Years</strong></div>
                       </div>
                       <p className="text-white-50">Leading the institution towards excellence through innovative academic planning and strong faculty coordination.</p>
@@ -113,7 +115,7 @@ export default function Administration() {
               <div key={index} className="col-xl-3 col-lg-4 col-md-6">
                 <div className="staff-card-modern">
                   <div className="staff-image-container">
-                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt={staff.name} />
+                    <img src={staff.img} alt={staff.name} />
                   </div>
                   <div className="staff-body">
                     <h6>{staff.name}</h6>

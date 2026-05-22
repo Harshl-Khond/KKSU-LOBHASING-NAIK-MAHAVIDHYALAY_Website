@@ -57,11 +57,15 @@ export default function Footer() {
               </li>
               <li>
                 <i className="bi bi-envelope-fill"></i>
-                <a href="mailto:info@mpsccollege.edu.in">info@mpsccollege.edu.in</a>
+                <a href="mailto:lnkcollege2023@gmail.com"> lnkcollege2023@gmail.com </a>
+              </li>
+              <li>
+                <i className="bi bi-envelope-fill"></i>
+                <a href="mailto:dagdusingnaik@gmail.com "> dagdusingnaik@gmail.com  </a>
               </li>
               <li>
                 <i className="bi bi-telephone-fill"></i>
-                <span>+91 98765 43210</span>
+                <span>+9923900777 </span>
               </li>
             </ul>
           </div>

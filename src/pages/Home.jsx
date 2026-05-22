@@ -5,6 +5,7 @@ import collegeImg from "../assets/College.png"
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
+import img4 from "../public/Priya ganoje .jpg";
 
 export default function Home() {
   return (
@@ -98,9 +99,9 @@ export default function Home() {
         <div className="container">
           <div className="message-card shadow-lg border-0">
             <div className="row g-0">
-              <div className="col-md-4">
+              <div className="col-md-4 principal-img-col">
                 <div className="principal-img-container">
-                    <img src="" className="principal-img" alt="Principal" />
+                    <img src={img4} className="principal-img" alt="Principal" />
                 </div>
               </div>
               <div className="col-md-8 p-4 p-lg-5 d-flex flex-column justify-content-center bg-white">
@@ -113,7 +114,7 @@ export default function Home() {
                   reaches their highest potential."
                 </p>
                 <div className="principal-meta">
-                    <h5 className="fw-bold mb-0">Dr. Rajesh G. Deshmukh</h5>
+                    <h5 className="fw-bold mb-0">Miss. Priya ganoje </h5>
                     <span className="text-gold fw-bold text-uppercase small">Principal, LN Mahavidhyalay</span>
                 </div>
               </div>

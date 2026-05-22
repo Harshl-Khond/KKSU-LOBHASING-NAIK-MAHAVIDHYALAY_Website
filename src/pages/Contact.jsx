@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* RIGHT: ENQUIRY FORM */}
+          RIGHT: ENQUIRY FORM
           <div className="col-lg-7">
             <div className="contact-form-card p-4 p-md-5 shadow-lg">
               <h3 className="text-maroon fw-bold mb-4 text-center">Enquiry / Feedback</h3>
