@@ -65,7 +65,7 @@ export default function Footer() {
               </li>
               <li>
                 <i className="bi bi-telephone-fill"></i>
-                <span>+9923900777 </span>
+                <span>+9923900777 </span>      
               </li>
             </ul>
           </div>
